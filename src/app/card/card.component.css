@@ -1,0 +1,64 @@
+.container {
+    border: 2px solid transparent;
+}
+
+.box {
+    /* margin: 2rem 0rem 0rem 0rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+
+    @media only screen and (min-width: 20em) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    @media only screen and (min-width: 75em) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: unset;
+        align-items: center;
+        border: 2px solid transparent;
+
+    }
+
+}
+
+.btn {
+    margin-left: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+
+    @media only screen and (min-width: 20em) {
+        margin-left: 1rem;
+    }
+
+    @media only screen and (min-width: 75em) {
+        margin-left: 3rem;
+    }
+
+}
+
+.card-class {
+    width: 30%;
+    margin: 1rem .5rem;
+    text-align: left;
+
+    @media only screen and (min-width: 20em) {
+        width: 90%;
+        margin: 1rem .5rem;
+    }
+
+    @media only screen and (min-width: 75em) {
+        width: 30%;
+        margin: 1rem .5rem;
+    }
+}
+
+img {
+    width: 100%;
+}

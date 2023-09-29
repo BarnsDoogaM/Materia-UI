@@ -1,0 +1,12 @@
+<mat-button-toggle-group #toggleBtn="matButtonToggleGroup" class="toggle" value="grid">
+    <mat-button-toggle value="grid">
+        <mat-icon>grid_on</mat-icon>
+    </mat-button-toggle>
+
+    <mat-button-toggle value="table">
+        <mat-icon>table_chart</mat-icon>
+    </mat-button-toggle>
+
+</mat-button-toggle-group>
+<app-product-grid *ngIf="toggleBtn.value === 'grid'"></app-product-grid>
+<app-table-product *ngIf="toggleBtn.value === 'table'"></app-table-product>

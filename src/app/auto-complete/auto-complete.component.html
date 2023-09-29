@@ -1,0 +1,14 @@
+<form class="example-form">
+    <h1 class="text-align: center">Auto Complete</h1>
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label> choose Favorite color</mat-label>
+      <input matInput placeholder="red" value="color" [matAutocomplete]="auto" [formControl]="formcontrol">
+      <mat-autocomplete autoActiveFirstOption #auto>
+        <mat-option *ngFor="let item of colorArray" [value]="item">{{item}}</mat-option>
+    </mat-autocomplete>
+    </mat-form-field>
+    <button class="info" routerLink="/table" mat-raised-button color="warn">Info</button> 
+  </form>
+  
+  <button class="userbutton" (click)="openpopup()" mat-raised-button color="primary"> Add User (+)</button>
+  

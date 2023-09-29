@@ -1,0 +1,60 @@
+mat-card{
+    /* margin: 2rem; */
+    width: 50%;
+    margin: 3rem auto;
+
+    @media only screen and (min-width: 20em) {
+        width: 90%;
+        /* margin: auto; */
+     }
+     @media only screen and (min-width: 75em) {
+        width: 50%;
+ }
+ 
+}
+
+.mat-mdc-form-field{
+    margin-left: 1rem;
+    width: 98%;
+
+    @media only screen and (min-width: 20em) {
+        width: 90%;
+        margin-left: 1rem;
+     }
+     @media only screen and (min-width: 75em) {
+        width: 98%;
+ }
+}
+
+.mat-50{
+    width: 47%;
+    margin-left: 1rem;
+
+    @media only screen and (min-width: 20em) {
+        width: 90%;
+        margin-left: 0rem;
+     }
+     @media only screen and (min-width: 75em) {
+        width: 47%;
+        margin-left: 1rem;
+ }
+ 
+
+}
+.checkbox{
+    @media only screen and (min-width: 20em) {
+        margin-left: 1rem;
+     }
+     @media only screen and (min-width: 75em) {
+        margin-left: 0rem;
+ }
+ 
+}
+.mat-50:not(:last-child){
+    margin-left: 1rem;
+}
+
+.btn{
+    margin: 2rem;
+    text-align: right;
+}

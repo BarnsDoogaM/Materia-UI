@@ -1,0 +1,14 @@
+mat-card{
+    margin: 1rem;
+    /* min-height: 3rem; */
+}
+
+.mat-mdc-form-field{
+    width: 95%;
+}
+
+
+.input{
+    padding: .2rem;
+    
+}

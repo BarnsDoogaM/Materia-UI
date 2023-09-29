@@ -1,0 +1,23 @@
+.example-spacer{
+    flex: 1 1 auto;
+    /* @media only screen and (min-width: 20em) {
+        flex: 1 1 auto;
+    }
+    @media only screen and (min-width: 75em) {
+        flex: 1 1 auto;
+    } */
+}
+
+.router{
+    min-height: 600px;
+}
+
+.unset{
+    @media only screen and (min-width: 20em) {
+        display: none;
+    }
+    @media only screen and (min-width: 75em) {
+        display: unset;
+        margin-left: auto;
+    }
+}

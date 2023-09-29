@@ -1,0 +1,53 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    margin: 3rem auto;
+}
+
+.example-full-width {
+    width: 100%;
+
+    @media only screen and (min-width: 20em) {
+        width: 90%;
+        margin-left: 1rem;
+
+    }
+
+    @media only screen and (min-width: 75em) {
+        width: 100%;
+    }
+}
+
+h1{
+    @media only screen and (min-width: 20em) {
+       text-align: center;
+
+    }
+
+    @media only screen and (min-width: 75em) {
+        text-align: center;
+    }
+}
+.info{
+    @media only screen and (min-width: 20em) {
+      margin-left: 1rem;
+
+    }
+
+    @media only screen and (min-width: 75em) {
+      margin-left: 0rem;
+    }
+}
+.userbutton {
+    margin-left: 26rem;
+    cursor: pointer;
+
+    @media only screen and (min-width: 20em) {
+        margin-left: 1rem;
+    }
+
+    @media only screen and (min-width: 75em) {
+        margin-left: 26rem;
+    }
+}

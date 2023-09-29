@@ -1,0 +1,20 @@
+<b>products List</b> <br>
+
+<div>
+    <mat-grid-list cols="3">
+        <mat-grid-tile *ngIf="products$ | async as products">
+            <mat-card class="example" *ngFor="let prod of products">
+                <img mat-card-image src="{{prod.img}}" alt="">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                        <mat-card-title>{{prod.name}}</mat-card-title>
+                        <mat-card-header>{{prod.price | currency: 'NGN'}}</mat-card-header>
+                    </div>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>{{prod.description}}</p>
+                </mat-card-content>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

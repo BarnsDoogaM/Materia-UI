@@ -1,0 +1,31 @@
+.card{
+    width: 40%;
+    margin: 8rem auto;
+}
+
+.mat-button-toggle{
+    background-color: blue;
+    color: white;
+    border-radius: 60px;
+    border-style: none;
+    width: 100px;
+    z-index: 1000;
+}
+
+
+.mat-button-toggle-group{
+    z-index: 1000;
+    border-width: 2px;
+    font-style: normal;
+   font-size: 11px;
+   /* background-color: rgb(13, 10, 196); */
+}
+
+.tg1{
+margin-left: 200px;
+margin-top: 6px;
+margin-right: 6px;
+z-index: 1000;
+background-color: white;
+color: red;
+}

@@ -1,0 +1,38 @@
+.container{
+    padding: 1rem;
+    border: 2px solid transparent;
+}
+
+.fade{
+    width: 50%;
+    margin: 1rem auto;
+    border: 1px solid blue;
+    padding: 1rem;
+
+    @media only screen and (min-width: 20em) {
+        width: 90%; 
+        margin: 1rem 0rem;
+        
+
+     }
+     @media only screen and (min-width: 75em) {
+        width: 50%;
+        margin: 1rem auto;
+ }
+}
+
+.fade >  div{
+    margin-left: 18rem;
+    @media only screen and (min-width: 20em) {
+        margin-left: 0rem;
+    
+
+     }
+     @media only screen and (min-width: 75em) {
+        margin-left: 18rem;
+ }
+}
+
+h1{
+    text-align: center;
+}

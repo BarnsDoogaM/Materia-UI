@@ -1,0 +1,63 @@
+<div>
+    <h1 mat-dialog-title>{{inputData.user}}</h1>
+    <div mat-diolog-content>
+        <form [formGroup]="customerForm" (ngSubmit)="saveCustomer()">
+            <mat-card>
+                <h1 style="text-align: center; text-transform: capitalize;">contact form</h1>
+                <mat-card-content>
+                    <mat-form-field appearance="outline" class="mat-50">
+                        <mat-label>Name</mat-label>
+                        <input type="text" matInput preference="outline" formControlName="name">
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="mat-50">
+                        <mat-label>Email</mat-label>
+                        <input type="email" matInput formControlName="email">
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Phone</mat-label>
+                        <input type="tel" matInput formControlName="phone">
+                    </mat-form-field>
+                   
+                    <mat-form-field appearance="outline" >
+                        <mat-label>Address</mat-label>
+                       <textarea matInput formControlName="address" ></textarea>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="mat-50">
+                        <mat-label>Country</mat-label>
+                        <mat-select formControlName="country">
+                            <mat-option value="Country" *ngFor="let Country of countryList">{{Country}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="mat-50">
+                        <mat-label>Date of Birth</mat-label>
+                        <input matInput [matDatepicker]="picker" formControlName="dob">
+                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                        <mat-hint>dd/mm/yyyy</mat-hint>
+                    </mat-form-field>
+                    <div>
+                        <mat-radio-group color="primary" formControlName="gender">
+                            <mat-radio-button value="male">male</mat-radio-button>
+                            <mat-radio-button value="female">female</mat-radio-button>
+                        </mat-radio-group> <br>
+                       <mat-checkbox  formControlName="status">Is Active</mat-checkbox>
+                    </div>
+                </mat-card-content>
+            
+                <mat-card-footer>
+                    <div class="btn">
+                        <button style="margin-right:  .5rem;" (click)="save()" type="submit" [disabled]="!customerForm.valid" mat-raised-button color="primary">Save</button>
+                    <button mat-raised-button color="accent" (click)="clear()">Clear</button>
+                    </div>
+                </mat-card-footer>
+            </mat-card>
+        </form>
+    </div>
+
+    <div mat-dialog-actions>
+        <button mat-raised-button color="accent" (click)="closepopup()">Close</button>
+        <button mat-raised-button color="warn" [mat-dialog-close]="closemessage">Cancel</button>
+    </div>
+
+</div>
