@@ -44,13 +44,5 @@ export class PopupComponent implements OnInit {
   closepopup() {
     this.ref.close('close using function');
   }
-
-  save() {
-    console.log(this.customerForm.value);
-  }
-
-  // clear(){
-  //   this.customerForm.reset();
-  // }
  
 }

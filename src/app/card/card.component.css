@@ -42,6 +42,20 @@
     }
 
 }
+.btnn {
+    margin-left: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+
+    @media only screen and (min-width: 20em) {
+        margin-left: 1rem;
+    }
+
+    @media only screen and (min-width: 75em) {
+        margin-left: 1rem;
+    }
+
+}
 
 .card-class {
     width: 30%;

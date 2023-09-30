@@ -1,0 +1,43 @@
+<form [formGroup]="MyForm" (ngSubmit)="saveAssociate()">
+    <mat-card>
+        <mat-card-content>
+            <mat-form-field class="mat-50">
+                <mat-label>Assosciate</mat-label>
+                <mat-select formControlName="id" (selectionChange)="cusChange($event.value)">
+                    <mat-option [value]="item.id" *ngFor="let item of associateList">{{item.name}}</mat-option>
+                </mat-select>
+
+            </mat-form-field>
+            <div>
+                <button (click)="addAddress()" type="button" mat-raised-button color="primary">Add Address</button>
+            </div>
+            <div formArrayName="address">
+                <mat-card *ngFor="let item of getAddress.controls; let i = index" [formGroupName]="i">
+                    <mat-card-content>
+                        <h1>Address - {{i + 1}}</h1>
+                        <mat-form-field class="mat-form-field">
+                            <mat-label>Title</mat-label>
+                            <input type="text" matInput formControlName="title">
+                        </mat-form-field>
+                        <mat-form-field class="mat-form-field">
+                            <mat-label>Country</mat-label>
+                            <input type="text" (keyup)="autoChange(i)" matInput formControlName="country"
+                                [matAutocomplete]="auto">
+                            <mat-autocomplete #auto>
+                                <mat-option [value]="country.code"
+                                    *ngFor="let country of filteredOptions | async">{{country.name}}</mat-option>
+                            </mat-autocomplete>
+                        </mat-form-field>
+                        <mat-form-field class="mat-form-field">
+                            <mat-label>Full Address</mat-label>
+                            <textarea matInput formControlName="fullAddress"></textarea>
+                        </mat-form-field>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </mat-card-content>
+        <mat-card-actions>
+            <button type="submit" mat-raised-button color="accent">Save</button>
+        </mat-card-actions>
+    </mat-card>
+</form>

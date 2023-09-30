@@ -15,6 +15,7 @@ import { TourComponent } from './tour/tour.component';
 import { SliderComponent } from './slider/slider.component';
 import { FormdesignComponent } from './formdesign/formdesign.component';
 import { PopupComponent } from './popup/popup.component';
+import { AssociateComponent } from './associate/associate.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,9 @@ const routes: Routes = [
   },
   {
     path: 'form', component: FormdesignComponent
+  },
+  {
+    path: 'associate', component: AssociateComponent
   },
   {
     path: 'popup', component: PopupComponent

@@ -24,6 +24,7 @@ import { TourComponent } from './tour/tour.component';
 import { SliderComponent } from './slider/slider.component';
 import { FormdesignComponent } from './formdesign/formdesign.component';
 import { PopupComponent } from './popup/popup.component';
+import { AssociateComponent } from './associate/associate.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { PopupComponent } from './popup/popup.component';
     TourComponent,
     SliderComponent,
     FormdesignComponent,
-    PopupComponent
+    PopupComponent,
+    AssociateComponent
   ],
   imports: [
     BrowserModule,

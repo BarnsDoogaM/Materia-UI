@@ -55,5 +55,76 @@
       "body": "some comment",
       "postId": 1
     }
+  ],
+  "associate": [
+    {
+      "id": 1,
+      "name": "",
+      "address": [
+        {
+          "title": "fg",
+          "country": "chad",
+          "fullAddress": "JJJJJJJJJJ"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "",
+      "address": [
+        {
+          "title": "",
+          "country": "",
+          "fullAddress": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "sesuur",
+      "Address": []
+    },
+    {
+      "id": 4,
+      "name": "",
+      "address": [
+        {
+          "title": "",
+          "country": "",
+          "fullAddress": ""
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "tersugh",
+      "Address": []
+    }
+  ],
+  "country": [
+    {
+      "code": "india",
+      "name": "india"
+    },
+    {
+      "code": "chad",
+      "name": "chad"
+    },
+    {
+      "code": "niger",
+      "name": "rwanda"
+    },
+    {
+      "code": "nigeria",
+      "name": "nigeria"
+    },
+    {
+      "code": "ghana",
+      "name": "cameroon"
+    },
+    {
+      "code": "biafra",
+      "name": "biafra"
+    }
   ]
 }
